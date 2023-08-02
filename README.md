@@ -42,9 +42,13 @@ Para saber como criar suas chaves públicas e privadas, e seu ID do projeto, ace
 
 Para executar, rode o seguinte comando:
 ```
-python run.py <ambiente> <id_do_projeto> <chave_privada>
+python run.py <ambiente> <id_do_projeto> '<conteudo_chave_privada>'
 ```
-Substitua <ambiente>, <id_do_projeto> e <chave_privada> pelos valores correspondentes de acordo com a sua configuração.
+Substitua <ambiente>, <id_do_projeto> e <conteudo_chave_privada> pelos valores correspondentes de acordo com a sua configuração.
+Exemplo:
+```
+python run.py sandbox 012938476125 '-----BEGIN EC PARAMETERS----- UioobiuBOg== -----END EC...'
+```
 
 ## Funcionamento
 Ao ser executado, o projeto iniciará um processo de criação de 10 transferências PIX a cada 3 horas durante 24 horas. Para cada transferência, o programa irá gerar automaticamente um nome aleatório e um CPF válido utilizando as bibliotecas names_generator e cpf_generator, respectivamente.
