@@ -4,7 +4,7 @@ Este é um projeto em Python que utiliza o SDK do Stark Bank para criar 10 trans
 
 ## Requisitos
 
-Para execução do projeto, certifique-se de ter as seguintes dependências instaladas:
+Além de ter instalado o Python 3.x na máquina para execução do projeto, certifique-se de ter as seguintes dependências instaladas:
 
 SDK do Stark Bank:
 ```python
@@ -37,3 +37,23 @@ Para saber como criar suas chaves públicas e privadas, e seu ID do projeto, ace
 - https://starkbank.com/docs/api#authentication
 - https://github.com/starkbank/ecdsa-python
 - https://github.com/starkbank/sdk-python
+
+## Execução
+
+Para executar, rode o seguinte comando:
+```javascript
+python run.py <ambiente> <id_do_projeto> <chave_privada>
+```
+Substitua <ambiente>, <id_do_projeto> e <chave_privada> pelos valores correspondentes de acordo com a sua configuração.
+
+## Funcionamento
+Ao ser executado, o projeto iniciará um processo de criação de 10 transferências PIX a cada 3 horas durante 24 horas. Para cada transferência, o programa irá gerar automaticamente um nome aleatório e um CPF válido utilizando as bibliotecas names_generator e cpf_generator, respectivamente.
+
+Após a execução, o projeto irá gerar um relatório com as seguintes informações:
+
+- Porcentagem de Transferências com Sucesso: O porcentual de transferências que foram concluídas com sucesso em relação ao total de transferências realizadas.
+
+- Média de Tempo de Processamento: O tempo médio que levou desde a criação da transferência até o último log de sucesso ou falha.
+
+- Possíveis Erros: Caso alguma transferência tenha falhado, o relatório exibirá os possíveis erros que podem ter acontecido durante o processo.
+
