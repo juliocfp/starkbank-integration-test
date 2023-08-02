@@ -7,19 +7,19 @@ Este é um projeto em Python que utiliza o SDK do Stark Bank para criar 10 trans
 Além de ter instalado o Python 3.x na máquina para execução do projeto, certifique-se de ter as seguintes dependências instaladas:
 
 SDK do Stark Bank:
-```python
+```
 pip install starkbank
 ```
 Jinja2:
-```python
+```
 pip install Jinja2
 ```
 cpf_generator:
-```python
+```
 pip install cpf_generator
 ```
 names_generator:
-```python
+```
 pip install names_generator
 ```
 
@@ -41,7 +41,7 @@ Para saber como criar suas chaves públicas e privadas, e seu ID do projeto, ace
 ## Execução
 
 Para executar, rode o seguinte comando:
-```javascript
+```
 python run.py <ambiente> <id_do_projeto> <chave_privada>
 ```
 Substitua <ambiente>, <id_do_projeto> e <chave_privada> pelos valores correspondentes de acordo com a sua configuração.
