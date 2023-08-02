@@ -53,6 +53,7 @@ python run.py sandbox 012938476125 '-----BEGIN EC PARAMETERS----- UioobiuBOg== -
 ## Funcionamento
 Ao ser executado, o projeto iniciará um processo de criação de 10 transferências PIX a cada 3 horas durante 24 horas. Para cada transferência, o programa irá gerar automaticamente um nome aleatório e um CPF válido utilizando as bibliotecas names_generator e cpf_generator, respectivamente.
 
+## Relatório
 Após a execução, o projeto irá gerar um relatório com as seguintes informações:
 
 - Porcentagem de Transferências com Sucesso: O porcentual de transferências que foram concluídas com sucesso em relação ao total de transferências realizadas.
@@ -61,3 +62,4 @@ Após a execução, o projeto irá gerar um relatório com as seguintes informa�
 
 - Possíveis Erros: Caso alguma transferência tenha falhado, o relatório exibirá os possíveis erros que podem ter acontecido durante o processo.
 
+O relatório será gerado na raiz do projeto no formato html.
